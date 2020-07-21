@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Heart Attack Classifier</h1>
+
+<form action="\predict" method="post">
+  <input type="text" name="age" placeholder="Age" required="required" />
+  <br><br>
+  <input type="text" name="sex" placeholder="Sex" required="required" />
+  <br><br>
+  <input type="text" name="cp" placeholder="Chest pain type" required="required" />
+  <br><br>
+  <input type="text" name="trestbps" placeholder="Resting Blood Pressure" required="required" />
+  <br><br>
+  <input type="text" name="chol" placeholder="Serum Cholestoral(mg/dl)" required="required" />
+  <br><br>
+  <input type="text" name="fbs" placeholder="Fasting Blood sugar(>120 mg/dl)" required="required" />
+  <br><br>
+  <input type="text" name="restecg" placeholder="Resting Electrocardiographic results(values 0,1,2)" required="required" />
+  <br><br>
+  <input type="text" name="thalach" placeholder="maximum heart rate achieved" required="required" />
+  <br><br>
+  <input type="text" name="exang" placeholder="exercise induced angina" required="required" />
+  <br><br>
+  <input type="text" name="oldpeak" placeholder="ST depression induced by exercise relative to rest" required="required" />
+  <br><br>
+  <input type="text" name="slope" placeholder="slope of the peak exercise ST segment" required="required" />
+  <br><br>
+  <input type="text" name="ca" placeholder="number of major vessels(flourosopy)" required="required" />
+  <br><br>
+  <input type="text" name="thal" placeholder="thal(0,1,2)" required="required" />
+  
+  <style>
+	.predict {
+	margin: 0;
+	position: absolute;
+	top: 30%;
+	left: 30%
+	}	
+  </style>
+  
+  <div class="predict">
+    <button>Predict</button>
+  </div>
+</form>
+
+<style>
+	.output {
+	margin: 0;
+	position: absolute;
+	top: 30%;
+	left: 40%
+	}	
+</style>
+<div class="output">
+	{{out}}
+</div>
+</body>
+</html>
